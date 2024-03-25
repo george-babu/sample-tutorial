@@ -76,7 +76,7 @@ WSGI_APPLICATION = 'sample_tutorial.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'sample_tutorial', 
+        'NAME': 'sampletutorialdb', 
         'USER': 'postgres',
         'PASSWORD': 'postgres',
         'HOST': '10.98.161.91/opt/bitnami/postgresql', 
