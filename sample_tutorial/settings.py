@@ -79,7 +79,7 @@ DATABASES = {
         'NAME': 'sample_tutorial', 
         'USER': 'postgres',
         'PASSWORD': 'postgres',
-        'HOST': '10.98.161.91', 
+        'HOST': '10.98.161.91/opt/bitnami/postgresql', 
         'PORT': '5432',
     }
 }
