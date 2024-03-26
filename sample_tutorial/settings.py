@@ -28,7 +28,7 @@ SECRET_KEY = os.getenv("SECRET_KEY")
 DEBUG = True
 
 ALLOWED_HOSTS = ['*']
-
+CSRF_TRUSTED_ORIGINS = ['https://sample-tutorial-d690e5-tools.apps.silver.devops.gov.bc.ca', 'https://*.127.0.0.1']
 
 # Application definition
 
