@@ -18,6 +18,7 @@ class BookCreate(CreateView):
     success_url = reverse_lazy('book_list')
 
 class BookUpdate(UpdateView):
+    print("updating...")
     model = Book
     fields = ['name', 'pages']
     success_url = reverse_lazy('book_list')
