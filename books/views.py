@@ -1,3 +1,4 @@
+"""
 from django.http import HttpResponse
 from django.views.generic import ListView, DetailView
 from django.views.generic.edit import CreateView, UpdateView, DeleteView
@@ -70,4 +71,4 @@ def book_delete(request, pk, template_name='books/book_confirm_delete.html'):
         book.delete()
         return redirect('book_list')
     return render(request, template_name, {'object':book})
-"""
+# """

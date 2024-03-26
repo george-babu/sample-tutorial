@@ -1,5 +1,5 @@
 from django.urls import path
-
+"""
 from . import views
 
 urlpatterns = [
@@ -13,8 +13,6 @@ urlpatterns = [
 
 """
 # URL for Function based views for the above
-from django.urls import path
-
 from books import views
 
 urlpatterns = [
@@ -24,4 +22,4 @@ urlpatterns = [
     path('edit/<int:pk>', views.book_update, name='book_edit'),
     path('delete/<int:pk>', views.book_delete, name='book_delete'),
 ]
-"""
+# """
