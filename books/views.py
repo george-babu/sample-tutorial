@@ -54,6 +54,7 @@ def book_create(request, template_name='books/book_form.html'):
     if form.is_valid():
         form.save()
         return redirect('book_list')
+    print("creating...")
     return render(request, template_name, {'form':form})
 
 def book_update(request, pk, template_name='books/book_form.html'):
