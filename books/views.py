@@ -12,6 +12,7 @@ class BookView(DetailView):
     model = Book
 
 class BookCreate(CreateView):
+    print("creating...")
     model = Book
     fields = ['name', 'pages']
     success_url = reverse_lazy('book_list')
