@@ -63,6 +63,7 @@ def book_update(request, pk, template_name='books/book_form.html'):
     if form.is_valid():
         form.save()
         return redirect('book_list')
+    print("updating...")
     return render(request, template_name, {'form':form})
 
 def book_delete(request, pk, template_name='books/book_confirm_delete.html'):
